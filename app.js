@@ -1,7 +1,7 @@
 const ratingBtns = document.querySelectorAll('.rating-buttons')
 const ratingBtn = document.querySelectorAll('.rating-btn')
 const allSections = document.querySelector('.main-content');
-const submitBtn = document.querySelectorAll('.submit')
+const submitBtn = document.querySelector('.submit')
 
 function selectedOption() {
 
@@ -11,10 +11,9 @@ function selectedOption() {
       currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
       this.className += ' active-btn'
     });
-
-
-
   }
+
+  console.log("selected : ", ratingBtn);
 
   // Toggle Theme
   const themeBtn = document.querySelector('.theme-btn');
